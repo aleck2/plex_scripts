@@ -5,19 +5,19 @@
 Script iterates recursively from parent directory (passed as argument) and defaults ContentCreateDate to 1969-12-31 if field does not already exist with a meaningful value.   
 Script can easily be modfied for other metadata
 
+### Why
+I've had issues with Plex assigning bad "release dates" to home videos. With many videos (assets), managing a library gets unwieldly. This scripts helps automate library management and organization.  
 
 ### Requirements
 - [exiftool](https://exiftool.org/install.html)
 
-### Scenario
+### Instructions
+#### Bulk Unlock Plex Assets' attributes
 In Plex, you may have multiple assets with locked metadata fields  
 <img src="images/locked_release_date.png" alt="Locked Release Date" width="500"/>  
 However, updating the underlying file's metadata and refreshing metadata in Plex will not overwrite these locked fields.  
-In my experience, release date for home videos routinely gets mangled by Plex. Updating video metadata fixes this issue.  
 
-### Instructions
-#### Bulk Unlock Plex Assets' attributes
-Rather than manually selecting all of your plex assets to update attributes with variable success, this method lets you leverage Plex API.  
+This method leverages Plex API rather than relying on GUI.  
 Acquire your token and library key by following these [directions](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/), [see also](old.reddit.com/r/PleX/comments/mwzbh5/is_there_any_easy_way_to_unlock_tags_on_metadata/)  
 
 In your internet browser, navigate to your plex library. Open your browser's console, and run this call with your appropriate fields. 
