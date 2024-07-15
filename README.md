@@ -18,7 +18,7 @@ In Plex, you may have multiple assets with locked metadata fields
 However, updating the underlying file's metadata and refreshing metadata in Plex will not overwrite these locked fields.  
 
 This method leverages Plex API rather than relying on GUI.  
-Acquire your token and library key by following these [directions](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/), [see also](old.reddit.com/r/PleX/comments/mwzbh5/is_there_any_easy_way_to_unlock_tags_on_metadata/)  
+Acquire your token and library key by following these [directions](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/), [see also](https://old.reddit.com/r/PleX/comments/mwzbh5/is_there_any_easy_way_to_unlock_tags_on_metadata/)  
 
 In your internet browser, navigate to your plex library. Open your browser's console, and run this call with your appropriate fields. 
 ```
